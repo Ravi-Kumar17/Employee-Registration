@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration Successful</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h2>Employee Registered Successfully!</h2>
+
+<p>
+    Name:
+    <span th:text="${registeredEmployee.name}"></span>
+</p>
+
+<p>
+    Email:
+    <span th:text="${registeredEmployee.email}"></span>
+</p>
+
+<p>
+    Age:
+    <span th:text="${registeredEmployee.age}"></span>
+</p>
+
+<p>
+    Department:
+    <span th:text="${registeredEmployee.department}"></span>
+</p>
+
+<a th:href="@{/register}">Register Another Employee</a>
+
+</body>
+</html>
